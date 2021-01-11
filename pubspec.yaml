@@ -32,8 +32,8 @@ dependencies:
   flutter_cupertino_date_picker:
     git: https://github.com/daveleenew/flutter-cupertino-date-picker.git
   firebase_auth: ^0.14.0+5
-  cloud_firestore: ^0.12.9+4
-  firebase_core: ^0.4.0
+  cloud_firestore: ^0.13.0+1
+  firebase_core: ^0.4.2+1
 
 dev_dependencies:
   flutter_test:
