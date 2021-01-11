@@ -1,5 +1,6 @@
 import 'package:astrollo_app/screens/create_new/comps/name_field.dart';
 import 'package:astrollo_app/configs/size_config.dart';
+import 'package:astrollo_app/services/auth_service.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -12,6 +13,8 @@ class InitialPage extends StatefulWidget {
 }
 
 class _InitialPageState extends State<InitialPage> {
+  // login auth
+  final AuthService _auth = AuthService();
 
   // 0 is start, 1 is login, 2 is create new
   int _pageState = 0;
@@ -218,7 +221,43 @@ class _InitialPageState extends State<InitialPage> {
                           fontSize: 14, color: Colors.black54, fontWeight: FontWeight.w600),
                     ),
                   ),
-                  OutlineButton(text: "Join Astrollo"),
+                  //OutlineButton(text: "Join Astrollo"),
+                Container( // ------- button
+                    child: GestureDetector(
+                      onTap: () async {
+                        // dynamic because it could return null or User object
+                        dynamic result = await _auth.signInGuest();
+                        if (result == null) {
+                          print('error signing in');
+                        } else {
+                          print('signed in:\n');
+                          print(result);
+                        }
+                      },
+                      child: Container(
+                          width: double.infinity,
+                          height: SizeConfig.blockSizeVertical * 7,
+                          margin: EdgeInsets.all(5),
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                            borderRadius: BorderRadius.all(Radius.circular(10.0)),
+                            border: Border.all(color: Colors.black, width: 2,),
+                          ),
+                          child: Center(
+                            child: Text(
+                              "Join Astrollo",
+                              style: TextStyle(
+                                //fontFamily: "FireSans",
+                                decoration: TextDecoration.none,
+                                fontSize: 20,
+                                color: Colors.black,
+                              ),
+                            ),
+                          )
+                      ),
+                    )
+
+                ),
                 ]
               ), // * Login Container contents
             ),
@@ -303,12 +342,20 @@ class _InitialPageState extends State<InitialPage> {
  }
 
  class _OutlineButtonState extends State<OutlineButton> {
+   final AuthService _auth = AuthService();
+
    @override
    Widget build(BuildContext context) {
      return Container( // ------- button
          child: GestureDetector(
-           onTap: () {
-
+           onTap: () async {
+             // dynamic because it could return null or AuthService
+              dynamic result = await _auth.signInGuest();
+              if (result == null) {
+                print('error signing in');
+              } else {
+                print('signed in:\n' + result);
+              }
            },
            child: Container(
                width: double.infinity,

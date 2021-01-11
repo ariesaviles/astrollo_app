@@ -1,4 +1,5 @@
 import 'package:astrollo_app/screens/create_new/create_chart.dart';
+import 'package:astrollo_app/services/auth_service.dart';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
@@ -13,6 +14,9 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> with RouteAware {
+  // auth
+  final AuthService _auth = AuthService();
+
   // parallax variables
   double rateZero = 0;
   double rateOne = 0;
@@ -126,8 +130,31 @@ class _MyHomePageState extends State<MyHomePage> with RouteAware {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: <Widget>[
-                          makeFriend('Your Chart', "earth",
-                              "Example Birthday - 03:16 AM"),
+                          // ? The list of cards begins right here ********************
+                          // * your card:
+                          GestureDetector(
+                          onTap: () async {
+                            // will update stream to user == null
+                            // see wrapper
+                            await _auth.signOut();
+
+                          },
+                            child: Container(
+                            height: 130.0,
+                            margin: const EdgeInsets.only(
+                              top: 25.0,
+                              bottom: 15.0,
+                              right: 45.0,
+                              left: 15.0,
+                            ),
+                            child: new Stack(
+                              children: <Widget>[
+                                friendCard,
+                              ],
+                              ),
+                            ),
+                          ),
+                         // makeFriend(index)
                           Container(
                             height: 30,
                           ),
@@ -264,6 +291,61 @@ class _MyHomePageState extends State<MyHomePage> with RouteAware {
     );
   } // _buildTransition
 
+
+  final friendCard = Container(
+    child: Container(
+        margin: new EdgeInsets.fromLTRB(25.0, 20.0, 16.0, 16.0),
+        constraints: new BoxConstraints.expand(),
+        child: new Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: <Widget>[
+              // top portion
+              new Container(height: 4.0),
+              new Text("Your Card",
+                  style: TextStyle(
+                    fontSize: 20.0,
+                    fontFamily: 'Cagile',
+                    //fontWeight: FontWeight.w500
+                  )),
+              new Container(height: 3.0),
+              new Text("Birthday",
+                  style: TextStyle(
+                      fontSize: 12.0,
+                      fontFamily: 'FiraSans',
+                      color: Colors.grey)),
+              // separator
+              new Container(
+                margin:
+                new EdgeInsets.symmetric(vertical: 10.0, horizontal: 0.0),
+                height: 3.0,
+                width: 75.0,
+                color: Colors.green,
+              ),
+              // bottom portion
+//              new Row(
+//                  children: <Widget>[
+//                    new Text(frdSMR, style: TextStyle(fontSize: 15.0, fontFamily: 'Astro')),
+//                  ]
+//              )
+            ]
+        )
+    ), // Friend Card Cont,
+    height: 124.0,
+    margin: new EdgeInsets.only(left: 46.0),
+    decoration: new BoxDecoration(
+      color: Colors.white,
+      shape: BoxShape.rectangle,
+      borderRadius: new BorderRadius.circular(5.0),
+      boxShadow: <BoxShadow>[
+        new BoxShadow(
+          color: Colors.black26,
+          blurRadius: 7.0,
+          offset: new Offset(0.0, 10.0),
+        ),
+      ],
+    ),
+  );
+
   GestureDetector makeFriend(String name, String elementIn, String birth) {
     // for friend container
     String frdBio;
@@ -349,6 +431,7 @@ class _MyHomePageState extends State<MyHomePage> with RouteAware {
       ),
     ); // friendCard
 
+    // * log out on tap here ================================
     return GestureDetector(
       onTap: () {
 
