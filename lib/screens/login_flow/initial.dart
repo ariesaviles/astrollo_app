@@ -1,7 +1,9 @@
+import 'package:astrollo_app/configs/theme_config.dart';
 import 'package:astrollo_app/screens/create_new/comps/name_field.dart';
 import 'package:astrollo_app/configs/size_config.dart';
 import 'package:astrollo_app/services/auth_service.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 
 /*
@@ -18,14 +20,9 @@ class _InitialPageState extends State<InitialPage> {
 
   // 0 is start, 1 is login, 2 is create new
   int _pageState = 0;
-
-  double _headingOffset = 75;
-
-  var _backgroundColor = Colors.white;
-  var _headingColor = Colors.black;
-
+  
   double _loginWidth = 0;
-  double _loginOpacity = 0;
+  double _textOpacity = 0;
 
   double _loginYOffset, _loginXOffset = 0;
   double _registerOffset = 0;
@@ -38,57 +35,57 @@ class _InitialPageState extends State<InitialPage> {
   @override
   Widget build(BuildContext context) {
     SizeConfig().init(context);
+    ThemeConfig().init(context);
 
     final test = TextEditingController();
 
     switch(_pageState) {
       case 0:
-        _backgroundColor = Colors.white;
-        _headingColor = Colors.black;
-
-        _headingOffset = 75;
-
-        _loginOpacity = 0;
+        // ? opacity for "Chart the stars
+        _textOpacity = 1;
+        
         _loginWidth = SizeConfig.screenWidth;
         _loginYOffset = SizeConfig.screenHeight;
         _loginXOffset = 0;
         _registerOffset = SizeConfig.screenHeight;
         break;
       case 1:
-        _backgroundColor = Color(0xff3f333f);
-        _headingColor = Colors.white;
 
-        _headingOffset = 65;
-
-        _loginOpacity = 1;
+        _textOpacity = 0;
+        
         _loginWidth = SizeConfig.screenWidth;
-        _loginYOffset = SizeConfig.blockSizeVertical * 35;
+        _loginYOffset = SizeConfig.blockSizeVertical * 20;
         _loginXOffset = 0;
         _registerOffset = SizeConfig.screenHeight;
         break;
       case 2:
-        _backgroundColor = Color(0xff3f333f);
-        _headingColor = Colors.white;
 
-        _headingOffset = 55;
-
-        _loginOpacity = 0.7;
-        _loginWidth = SizeConfig.screenWidth - 2 * (SizeConfig.blockSizeHorizontal * 2);
-        _loginYOffset = SizeConfig.blockSizeVertical * 32;
-        _loginXOffset = SizeConfig.blockSizeHorizontal * 2;
-        _registerOffset = SizeConfig.blockSizeVertical * 35;
+        _textOpacity = 0;
+        _loginWidth = SizeConfig.screenWidth;
+        _loginYOffset = SizeConfig.screenHeight;
+        _loginXOffset = 0;
+        _registerOffset = SizeConfig.blockSizeVertical * 20;
         break;
     }
 
     return Material(
       child: Stack(
         children: [
+          Container(
+            //margin: EdgeInsets.only(top: SizeConfig.blockSizeVertical * ),
+            child: Image.asset("lib/assets/images/backgroundGradient.png",
+              fit: BoxFit.cover,
+              height: SizeConfig.screenHeight,
+              width: double.infinity,
+              alignment: Alignment.center,
+            ),
+          ),
           AnimatedContainer(
             curve: Curves.fastLinearToSlowEaseIn,
             duration: Duration(
               milliseconds: 1000,
             ),
-            color: _backgroundColor,
+            //color: _backgroundColor,
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: <Widget>[
@@ -99,84 +96,98 @@ class _InitialPageState extends State<InitialPage> {
                     });
                   },
                   child: Container( // *********** Astrollo and text *************
-                    //margin: EdgeInsets.all(30),
+                    margin: EdgeInsets.only(top: 50),
                     child: Column(
                       children: <Widget>[
-                        AnimatedContainer(
-                          curve: Curves.fastLinearToSlowEaseIn,
-                          duration: Duration(
-                            milliseconds: 1000
-                          ),
-                          margin: EdgeInsets.only(
-                            top: _headingOffset,
-                          ),
-                          child: Text("Astrollo",
-                            style: TextStyle(
-                              decoration: TextDecoration.none,
-                              fontFamily: "Cagile",
-                              fontSize: 50,
-                              color: _headingColor,
-                            ),
+                        Align(
+                          alignment: FractionalOffset.topCenter,
+                          child: Container(
+                            child: Image.asset("lib/assets/images/iconTrans.png", scale: 2.5,),
                           ),
                         ),
                         Container(
+                          height: SizeConfig.screenHeight / 5
+                        ),
+                        Container(
                           margin: EdgeInsets.all(30),
-                          child: Text("Chart the stars above our hearts.",
+                          child: Text("Chart the stars\nabove our hearts.",
                             textAlign: TextAlign.center,
                             style: TextStyle(
-                              fontFamily: "FireSans",
+                              fontFamily: "Cagile",
                               decoration: TextDecoration.none,
-                              fontSize: 25,
-                              color: _headingColor,
+                              fontSize: 35,
+                              color: Colors.white.withOpacity(_textOpacity),
                             ),
                           ),
                         ),
+                        Container( // *  ----------------------- button
+                            child: GestureDetector(
+                              onTap: () {
+                                setState(() {
+                                  if (_pageState != 0) {
+                                    _pageState = 0;
+                                  } else {
+                                    _pageState = 1;
+                                  }
+                                });
+                              },
+                              child: Container(
+                                  width: 250,
+                                  height: SizeConfig.blockSizeVertical * 8,
+                                  //margin: EdgeInsets.all(5),
+                                  decoration: BoxDecoration(
+                                    color: Colors.white.withOpacity(_textOpacity),
+                                    borderRadius: BorderRadius.all(Radius.circular(30.0)),
+                                    border: Border.all(color: Colors.white.withOpacity(_textOpacity), width: 1, style: BorderStyle.solid),
+                                  ),
+                                  child: Center(
+                                    child: Text(
+                                      "Create an Account",
+                                      style: TextStyle(
+                                        //fontFamily: "FireSans",
+                                        decoration: TextDecoration.none,
+                                        fontSize: 22,
+                                        color: Colors.black.withOpacity(_textOpacity),
+                                      ),
+                                    ),
+                                  )
+                              ),
+                            )
+                        ), // button
+
                       ],
                     ),
-                  ),
+                  ), // * layer 0
                 ),
-                Container( // ------------ image ---------
-                  child: Center(
-                    child: Image.asset("lib/assets/images/loginSplashTrans.png"),
-                  ),
-                ), // image
-                Container( // ------- button
-                  child: GestureDetector(
-                    onTap: () {
-                      setState(() {
-                        if (_pageState != 0) {
-                          _pageState = 0;
-                        } else {
-                          _pageState = 1;
-                        }
-                      });
-                    },
-                    child: Container(
-                      width: double.infinity,
-                      height: SizeConfig.blockSizeVertical * 8,
-                      margin: EdgeInsets.all(30),
-                      decoration: BoxDecoration(
-                        color: Color(0xff3f333f),
-                        borderRadius: BorderRadius.all(Radius.circular(10.0)),
-                      ),
-                      child: Center(
-                        child: Text(
-                          "Get Started",
-                          style: TextStyle(
-                            //fontFamily: "FireSans",
-                            decoration: TextDecoration.none,
-                            fontSize: 20,
-                            color: Colors.white,
-                          ),
-                        ),
-                      )
-                    ),
-                  )
-                ), // button
+                Expanded(
+                    child: Align(
+                        alignment: FractionalOffset.bottomCenter,
+                        child: Padding(
+                            padding: EdgeInsets.only(bottom: 50),
+                            child: RichText(
+                              text: TextSpan(
+                                children: <TextSpan>[
+                                  TextSpan(text: "Already have an account? ", style: TextStyle(fontSize: 15)),
+                                  TextSpan(text: "Sign in",
+                                      style: TextStyle(fontSize: 15, color: ThemeConfig.blue),
+                                      recognizer: new TapGestureRecognizer()..
+                                      onTap = () {
+                                        setState(() {
+                                          _pageState = 2;
+                                        });
+                                      }
+                                  )
+                                ],
+                              ),
+                            )
+                        )
+                    )
+                ),
               ],
+
             ),
           ),
-          GestureDetector( // ------------------------- Login Container -----------------------
+          GestureDetector( // ------------------------- Create Account Container -----------------------
             onTap: () {
               setState(() {
                 _pageState = 2;
@@ -190,10 +201,11 @@ class _InitialPageState extends State<InitialPage> {
                 milliseconds: 1000,
               ),
               decoration: BoxDecoration(
-                color: Colors.white.withOpacity(_loginOpacity),
+                color: Colors.white.withOpacity(0.60),
+                border: Border.all(color: Colors.white, width: 1),
                 borderRadius: BorderRadius.only(
-                  topLeft: Radius.circular(25),
-                  topRight: Radius.circular(25),
+                  topLeft: Radius.circular(35),
+                  topRight: Radius.circular(35),
                 )
               ),
               transform: Matrix4.translationValues(_loginXOffset, _loginYOffset, 1),
@@ -259,10 +271,10 @@ class _InitialPageState extends State<InitialPage> {
 
                 ),
                 ]
-              ), // * Login Container contents
+              ), // * create new layer 1
             ),
           ),
-          GestureDetector( // ------------------------- Sign Up Container -----------------------
+          GestureDetector( // ------------------------- Log in Container -----------------------
             onTap: () {
               setState(() {
                 _pageState = 1;
@@ -283,7 +295,7 @@ class _InitialPageState extends State<InitialPage> {
               ),
               transform: Matrix4.translationValues(0, _registerOffset, 1),
             ),
-          ),
+          ), // * log in layer 2
         ],
       ),
     );
