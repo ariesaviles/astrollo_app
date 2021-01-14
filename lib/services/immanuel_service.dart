@@ -30,8 +30,7 @@ class ImmanuelApiProvider {
         'Content-Type': 'application/json; charset=UTF-8',
       },
       body: jsonEncode(<String, String> {
-        'api_key': "WZVqMHzNmR4JxTrgM4eF2bILJFlzavQB",
-        'api_secret': "qPlvkeznpp7U",
+
         'latitude': lat,
         'longitude': lng,
         'birth_date': date,
