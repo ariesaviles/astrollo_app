@@ -80,6 +80,24 @@ class _InitialPageState extends State<InitialPage> {
               alignment: Alignment.center,
             ),
           ),
+          Container(
+            margin: EdgeInsets.only(top: 50),
+            child: Align(
+              alignment: FractionalOffset.topCenter,
+              child: Container(
+                child: Image.asset("lib/assets/images/iconTrans.png", scale: 2.5,),
+              ),
+            ),
+          ),
+          Container(
+            margin: EdgeInsets.only(top: 50),
+            child: Align(
+              alignment: FractionalOffset.topLeft,
+              child: Container(
+                child: Image.asset("lib/assets/icons/left-arrow.png", scale: 10),
+              ),
+            ),
+          ),
           AnimatedContainer(
             curve: Curves.fastLinearToSlowEaseIn,
             duration: Duration(
@@ -96,15 +114,10 @@ class _InitialPageState extends State<InitialPage> {
                     });
                   },
                   child: Container( // *********** Astrollo and text *************
-                    margin: EdgeInsets.only(top: 50),
+
                     child: Column(
                       children: <Widget>[
-                        Align(
-                          alignment: FractionalOffset.topCenter,
-                          child: Container(
-                            child: Image.asset("lib/assets/images/iconTrans.png", scale: 2.5,),
-                          ),
-                        ),
+
                         Container(
                           height: SizeConfig.screenHeight / 5
                         ),
@@ -157,7 +170,7 @@ class _InitialPageState extends State<InitialPage> {
 
                       ],
                     ),
-                  ), // * layer 0
+                  ),
                 ),
                 Expanded(
                     child: Align(
@@ -167,9 +180,9 @@ class _InitialPageState extends State<InitialPage> {
                             child: RichText(
                               text: TextSpan(
                                 children: <TextSpan>[
-                                  TextSpan(text: "Already have an account? ", style: TextStyle(fontSize: 15)),
+                                  TextSpan(text: "Already have an account? ", style: TextStyle(fontSize: 15, color: Colors.black.withOpacity(_textOpacity))),
                                   TextSpan(text: "Sign in",
-                                      style: TextStyle(fontSize: 15, color: ThemeConfig.blue),
+                                      style: TextStyle(fontSize: 15, color: ThemeConfig.blue.withOpacity(_textOpacity)),
                                       recognizer: new TapGestureRecognizer()..
                                       onTap = () {
                                         setState(() {
@@ -183,8 +196,7 @@ class _InitialPageState extends State<InitialPage> {
                         )
                     )
                 ),
-              ],
-
+              ], // * layer 0
             ),
           ),
           GestureDetector( // ------------------------- Create Account Container -----------------------
@@ -211,65 +223,58 @@ class _InitialPageState extends State<InitialPage> {
               transform: Matrix4.translationValues(_loginXOffset, _loginYOffset, 1),
               child: Column(
                 children: <Widget> [
-                  NameField(hint: "email or phone number", controller: test,),
-                  Divider(color: Colors.black, indent: 50, endIndent: 50,),
-                  NameField(hint: "password", controller: test,),
-                  Divider(color: Colors.black, indent: 50, endIndent: 50,),
-                  PrimaryButton(text: "Sign in"),
-                  Padding(
-                    padding: const EdgeInsets.symmetric(vertical: 10),
-                    child: Text(
-                      "Or sign in with:",
-                      style: TextStyle(
-                          fontSize: 14, color: Colors.black54, fontWeight: FontWeight.w600),
-                    ),
-                  ),
-                  Divider(color: Colors.black, indent: 20, endIndent: 20,),
-                  Padding(
-                    padding: const EdgeInsets.symmetric(vertical: 10),
-                    child: Text(
-                      "Don't have an account?:",
-                      style: TextStyle(
-                          fontSize: 14, color: Colors.black54, fontWeight: FontWeight.w600),
-                    ),
-                  ),
-                  //OutlineButton(text: "Join Astrollo"),
-                Container( // ------- button
-                    child: GestureDetector(
-                      onTap: () async {
-                        // dynamic because it could return null or User object
-                        dynamic result = await _auth.signInGuest();
-                        if (result == null) {
-                          print('error signing in');
-                        } else {
-                          print('signed in:\n');
-                          print(result);
-                        }
-                      },
-                      child: Container(
-                          width: double.infinity,
-                          height: SizeConfig.blockSizeVertical * 7,
-                          margin: EdgeInsets.all(5),
-                          decoration: BoxDecoration(
-                            color: Colors.white,
-                            borderRadius: BorderRadius.all(Radius.circular(10.0)),
-                            border: Border.all(color: Colors.black, width: 2,),
-                          ),
-                          child: Center(
-                            child: Text(
-                              "Join Astrollo",
-                              style: TextStyle(
-                                //fontFamily: "FireSans",
-                                decoration: TextDecoration.none,
-                                fontSize: 20,
-                                color: Colors.black,
-                              ),
-                            ),
-                          )
-                      ),
-                    )
+                  Container(height: SizeConfig.blockSizeVertical * 2),
+                  initialTextField(test, "Name"),
+                  //Container(height: SizeConfig.blockSizeVertical * 5),
+                  initialTextField(test, "Phone"),
+                  Container(height: SizeConfig.blockSizeVertical * 2),
+                  //Divider(color: Colors.black, indent: 50, endIndent: 50,),
 
-                ),
+                  Container( // *  ----------------------- sign in button
+                      child: GestureDetector(
+                        onTap: () {
+
+                        },
+                        child: Container(
+                            width: 175,
+                            height: SizeConfig.blockSizeVertical * 7,
+                            //margin: EdgeInsets.all(5),
+                            decoration: BoxDecoration(
+                              color: Colors.black.withOpacity(0.75),
+                              borderRadius: BorderRadius.all(Radius.circular(30.0)),
+                              border: Border.all(color: Colors.black, width: 1, style: BorderStyle.solid),
+                            ),
+                            child: Center(
+                              child: Text(
+                                "Create Account",
+                                style: TextStyle(
+                                  //fontFamily: "FireSans",
+                                  decoration: TextDecoration.none,
+                                  fontSize: 18,
+                                  color: Colors.white,
+                                ),
+                              ),
+                            )
+                        ),
+                      )
+                  ), // * sign in button
+
+                  //Divider(color: Colors.black, indent: 70, endIndent: 70,)
+                  Padding(
+                    padding: const EdgeInsets.only(top: 21),
+                    child: Divider(color: Colors.black, indent: 40, endIndent: 40,),
+                  ),
+
+                  Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 21),
+                    child: Text(
+                      "Or continue with:",
+                      style: TextStyle(
+                          fontSize: 14, color: Colors.black54, fontWeight: FontWeight.w600),
+                    ),
+                  ),
+
+
                 ]
               ), // * create new layer 1
             ),
@@ -300,7 +305,31 @@ class _InitialPageState extends State<InitialPage> {
       ),
     );
   }
-}
+
+  Widget initialTextField(TextEditingController contr, String hint) {
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 25, vertical: 15),
+      child: TextField(
+        controller: contr,
+        decoration: InputDecoration(
+          labelText: hint,
+          fillColor: Colors.white,
+          border: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(25.0),
+            borderSide: BorderSide(
+            ),
+          ),
+          //fillColor: Colors.green
+        ),
+        //keyboardType: TextInputType.emailAddress,
+        style: TextStyle(
+          fontFamily: "FiraSans",
+        ),
+      ),
+    );
+  }
+
+} // end of main class initalPage()
  class PrimaryButton extends StatefulWidget {
    PrimaryButton({Key key, this.text});
 

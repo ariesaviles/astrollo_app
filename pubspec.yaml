@@ -31,10 +31,12 @@ dependencies:
   mask_text_input_formatter: ^1.1.0 # used to mask text on forms
   flutter_cupertino_date_picker: # used in create chart page
     git: https://github.com/daveleenew/flutter-cupertino-date-picker.git
-  firebase_auth: ^0.14.0+5
+  firebase_auth: ^0.15.3
   cloud_firestore: ^0.13.0+1
   firebase_core: ^0.4.2+1
   provider: ^3.1.0 #used for auth
+  lottie: ^0.7.0+1 # splash
+  flutter_hooks: ^0.15.0 # splash
 
 dev_dependencies:
   flutter_test:
@@ -54,6 +56,8 @@ flutter:
   assets:
     - lib/assets/parallax/
     - lib/assets/images/
+    - lib/assets/icons/
+    - lib/assets/lottie/
 
   fonts:
     - family: Cagile

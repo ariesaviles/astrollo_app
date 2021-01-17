@@ -45,7 +45,6 @@ class PlaceApiProvider {
   final sessionToken;
 
 
-
   Future<List<Suggestion>> fetchSuggestions(String input) async {
     final request =
         'https://maps.googleapis.com/maps/api/place/autocomplete/json?input=$input&types=geocode&key=$apiKey&sessiontoken=$sessionToken';

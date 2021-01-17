@@ -1,0 +1,1184 @@
+{
+    "chartDate": "1997-05-10T03:16:00-04:00",
+    "diurnal": false,
+    "nocturnal": true,
+    "moonPhase": "First Quarter",
+    "planets": {
+        "sun": {
+            "planet": "Sun",
+            "sign": "Taurus",
+            "chartAngle": 49.67545760684598,
+            "signAngle": 19.67545760684598,
+            "formattedChartAngle": {
+                "degrees": "49",
+                "minutes": "40",
+                "seconds": "32"
+            },
+            "formattedSignAngle": {
+                "degrees": "19",
+                "minutes": "40",
+                "seconds": "32"
+            },
+            "movement": "Direct",
+            "aspects": {
+                "moon": {
+                    "object": "Moon",
+                    "type": "Semisquare",
+                    "aspect": 45,
+                    "orb": 1.9527697050674533,
+                    "movement": "Applicative"
+                },
+                "mars": {
+                    "object": "Mars",
+                    "type": "Trine",
+                    "aspect": 120,
+                    "orb": 2.0123556079599894,
+                    "movement": "Separative"
+                },
+                "jupiter": {
+                    "object": "Jupiter",
+                    "type": "Square",
+                    "aspect": 90,
+                    "orb": 0.8020595752798272,
+                    "movement": "Applicative"
+                },
+                "saturn": {
+                    "object": "Saturn",
+                    "type": "Semiquintile",
+                    "aspect": 36,
+                    "orb": 1.4411488273701138,
+                    "movement": "Applicative"
+                }
+            }
+        },
+        "moon": {
+            "planet": "Moon",
+            "sign": "Cancer",
+            "chartAngle": 92.72268790177854,
+            "signAngle": 2.722687901778542,
+            "formattedChartAngle": {
+                "degrees": "92",
+                "minutes": "43",
+                "seconds": "22"
+            },
+            "formattedSignAngle": {
+                "degrees": "02",
+                "minutes": "43",
+                "seconds": "22"
+            },
+            "movement": "Direct",
+            "aspects": {
+                "sun": {
+                    "object": "Sun",
+                    "type": "Semisquare",
+                    "aspect": 45,
+                    "orb": 1.9527697050674533,
+                    "movement": "Applicative"
+                },
+                "mercury": {
+                    "object": "Mercury",
+                    "type": "Sextile",
+                    "aspect": 60,
+                    "orb": 3.154524010599687,
+                    "movement": "Separative"
+                },
+                "venus": {
+                    "object": "Venus",
+                    "type": "Semiquintile",
+                    "aspect": 36,
+                    "orb": 2.760944465121952,
+                    "movement": "Applicative"
+                },
+                "mars": {
+                    "object": "Mars",
+                    "type": "Quintile",
+                    "aspect": 72,
+                    "orb": 2.9404140971074497,
+                    "movement": "Applicative"
+                },
+                "jupiter": {
+                    "object": "Jupiter",
+                    "type": "Sesquisquare",
+                    "aspect": 135,
+                    "orb": 2.7548292803472805,
+                    "movement": "Applicative"
+                },
+                "uranus": {
+                    "object": "Uranus",
+                    "type": "Biquintile",
+                    "aspect": 144,
+                    "orb": 0.05243068377006921,
+                    "movement": "Exact"
+                },
+                "neptune": {
+                    "object": "Neptune",
+                    "type": "Quincunx",
+                    "aspect": 150,
+                    "orb": 2.783742444147208,
+                    "movement": "Separative"
+                },
+                "pluto": {
+                    "object": "Pluto",
+                    "type": "Quincunx",
+                    "aspect": 150,
+                    "orb": 1.916845547621051,
+                    "movement": "Applicative"
+                }
+            }
+        },
+        "mercury": {
+            "planet": "Mercury",
+            "sign": "Aries",
+            "chartAngle": 29.56816389117886,
+            "signAngle": 29.56816389117886,
+            "formattedChartAngle": {
+                "degrees": "29",
+                "minutes": "34",
+                "seconds": "05"
+            },
+            "formattedSignAngle": {
+                "degrees": "29",
+                "minutes": "34",
+                "seconds": "05"
+            },
+            "movement": "Direct",
+            "aspects": {
+                "moon": {
+                    "object": "Moon",
+                    "type": "Sextile",
+                    "aspect": 60,
+                    "orb": 3.154524010599687,
+                    "movement": "Separative"
+                },
+                "venus": {
+                    "object": "Venus",
+                    "type": "Semisextile",
+                    "aspect": 30,
+                    "orb": 0.0845315242783613,
+                    "movement": "Exact"
+                },
+                "jupiter": {
+                    "object": "Jupiter",
+                    "type": "Quintile",
+                    "aspect": 72,
+                    "orb": 2.9093532909469673,
+                    "movement": "Applicative"
+                },
+                "neptune": {
+                    "object": "Neptune",
+                    "type": "Square",
+                    "aspect": 90,
+                    "orb": 0.37078156645247873,
+                    "movement": "Applicative"
+                },
+                "pluto": {
+                    "object": "Pluto",
+                    "type": "Biquintile",
+                    "aspect": 144,
+                    "orb": 0.9286304417792905,
+                    "movement": "Separative"
+                },
+                "chiron": {
+                    "object": "Chiron",
+                    "type": "Opposite",
+                    "aspect": 180,
+                    "orb": 2.246807711969666,
+                    "movement": "Separative"
+                }
+            }
+        },
+        "venus": {
+            "planet": "Venus",
+            "sign": "Taurus",
+            "chartAngle": 59.48363236690049,
+            "signAngle": 29.483632366900487,
+            "formattedChartAngle": {
+                "degrees": "59",
+                "minutes": "29",
+                "seconds": "01"
+            },
+            "formattedSignAngle": {
+                "degrees": "29",
+                "minutes": "29",
+                "seconds": "01"
+            },
+            "movement": "Direct",
+            "aspects": {
+                "sun": {
+                    "object": "Sun",
+                    "type": "Conjunct",
+                    "aspect": 0,
+                    "orb": 9.808174760054499,
+                    "movement": "Separative"
+                },
+                "moon": {
+                    "object": "Moon",
+                    "type": "Semiquintile",
+                    "aspect": 36,
+                    "orb": 2.760944465121952,
+                    "movement": "Applicative"
+                },
+                "mercury": {
+                    "object": "Mercury",
+                    "type": "Semisextile",
+                    "aspect": 30,
+                    "orb": 0.0845315242783613,
+                    "movement": "Exact"
+                },
+                "mars": {
+                    "object": "Mars",
+                    "type": "Sesquiquintile",
+                    "aspect": 108,
+                    "orb": 0.17946963198551202,
+                    "movement": "Exact"
+                },
+                "saturn": {
+                    "object": "Saturn",
+                    "type": "Semisquare",
+                    "aspect": 45,
+                    "orb": 0.6329740673156152,
+                    "movement": "Applicative"
+                },
+                "uranus": {
+                    "object": "Uranus",
+                    "type": "Sesquiquintile",
+                    "aspect": 108,
+                    "orb": 2.8133751488919927,
+                    "movement": "Separative"
+                },
+                "neptune": {
+                    "object": "Neptune",
+                    "type": "Trine",
+                    "aspect": 120,
+                    "orb": 0.45531309073086845,
+                    "movement": "Applicative"
+                },
+                "chiron": {
+                    "object": "Chiron",
+                    "type": "Quincunx",
+                    "aspect": 150,
+                    "orb": 2.162276187691276,
+                    "movement": "Separative"
+                }
+            }
+        },
+        "mars": {
+            "planet": "Mars",
+            "sign": "Virgo",
+            "chartAngle": 167.663101998886,
+            "signAngle": 17.663101998885992,
+            "formattedChartAngle": {
+                "degrees": "167",
+                "minutes": "39",
+                "seconds": "47"
+            },
+            "formattedSignAngle": {
+                "degrees": "17",
+                "minutes": "39",
+                "seconds": "47"
+            },
+            "movement": "Direct",
+            "aspects": {
+                "sun": {
+                    "object": "Sun",
+                    "type": "Trine",
+                    "aspect": 120,
+                    "orb": 2.0123556079599894,
+                    "movement": "Separative"
+                },
+                "moon": {
+                    "object": "Moon",
+                    "type": "Quintile",
+                    "aspect": 72,
+                    "orb": 2.9404140971074497,
+                    "movement": "Applicative"
+                },
+                "venus": {
+                    "object": "Venus",
+                    "type": "Sesquiquintile",
+                    "aspect": 108,
+                    "orb": 0.17946963198551202,
+                    "movement": "Exact"
+                },
+                "jupiter": {
+                    "object": "Jupiter",
+                    "type": "Quincunx",
+                    "aspect": 150,
+                    "orb": 2.814415183239845,
+                    "movement": "Applicative"
+                },
+                "saturn": {
+                    "object": "Saturn",
+                    "type": "Quincunx",
+                    "aspect": 150,
+                    "orb": 2.546495564669897,
+                    "movement": "Separative"
+                },
+                "uranus": {
+                    "object": "Uranus",
+                    "type": "Biquintile",
+                    "aspect": 144,
+                    "orb": 2.9928447808775047,
+                    "movement": "Separative"
+                },
+                "neptune": {
+                    "object": "Neptune",
+                    "type": "Sesquisquare",
+                    "aspect": 135,
+                    "orb": 2.7241565412546436,
+                    "movement": "Separative"
+                },
+                "north node": {
+                    "object": "North Node",
+                    "type": "Conjunct",
+                    "aspect": 0,
+                    "orb": 8.544563044672344,
+                    "movement": "Applicative"
+                }
+            }
+        },
+        "jupiter": {
+            "planet": "Jupiter",
+            "sign": "Aquarius",
+            "chartAngle": 320.47751718212584,
+            "signAngle": 20.477517182125837,
+            "formattedChartAngle": {
+                "degrees": "320",
+                "minutes": "28",
+                "seconds": "39"
+            },
+            "formattedSignAngle": {
+                "degrees": "20",
+                "minutes": "28",
+                "seconds": "39"
+            },
+            "movement": "Direct",
+            "aspects": {
+                "sun": {
+                    "object": "Sun",
+                    "type": "Square",
+                    "aspect": 90,
+                    "orb": 0.8020595752798272,
+                    "movement": "Applicative"
+                },
+                "moon": {
+                    "object": "Moon",
+                    "type": "Sesquisquare",
+                    "aspect": 135,
+                    "orb": 2.7548292803472805,
+                    "movement": "Applicative"
+                },
+                "mercury": {
+                    "object": "Mercury",
+                    "type": "Quintile",
+                    "aspect": 72,
+                    "orb": 2.9093532909469673,
+                    "movement": "Applicative"
+                },
+                "mars": {
+                    "object": "Mars",
+                    "type": "Quincunx",
+                    "aspect": 150,
+                    "orb": 2.814415183239845,
+                    "movement": "Applicative"
+                },
+                "saturn": {
+                    "object": "Saturn",
+                    "type": "Sextile",
+                    "aspect": 60,
+                    "orb": 5.360910747909713,
+                    "movement": "Applicative"
+                }
+            }
+        },
+        "saturn": {
+            "planet": "Saturn",
+            "sign": "Aries",
+            "chartAngle": 15.11660643421611,
+            "signAngle": 15.11660643421611,
+            "formattedChartAngle": {
+                "degrees": "15",
+                "minutes": "07",
+                "seconds": "00"
+            },
+            "formattedSignAngle": {
+                "degrees": "15",
+                "minutes": "07",
+                "seconds": "00"
+            },
+            "movement": "Direct",
+            "aspects": {
+                "sun": {
+                    "object": "Sun",
+                    "type": "Semiquintile",
+                    "aspect": 36,
+                    "orb": 1.4411488273701138,
+                    "movement": "Applicative"
+                },
+                "venus": {
+                    "object": "Venus",
+                    "type": "Semisquare",
+                    "aspect": 45,
+                    "orb": 0.6329740673156152,
+                    "movement": "Applicative"
+                },
+                "mars": {
+                    "object": "Mars",
+                    "type": "Quincunx",
+                    "aspect": 150,
+                    "orb": 2.546495564669897,
+                    "movement": "Separative"
+                },
+                "jupiter": {
+                    "object": "Jupiter",
+                    "type": "Sextile",
+                    "aspect": 60,
+                    "orb": 5.360910747909713,
+                    "movement": "Applicative"
+                }
+            }
+        },
+        "uranus": {
+            "planet": "Uranus",
+            "sign": "Aquarius",
+            "chartAngle": 308.6702572180085,
+            "signAngle": 8.670257218008487,
+            "formattedChartAngle": {
+                "degrees": "308",
+                "minutes": "40",
+                "seconds": "13"
+            },
+            "formattedSignAngle": {
+                "degrees": "08",
+                "minutes": "40",
+                "seconds": "13"
+            },
+            "movement": "Direct",
+            "aspects": {
+                "sun": {
+                    "object": "Sun",
+                    "type": "Square",
+                    "aspect": 90,
+                    "orb": 11.005200388837466,
+                    "movement": "Separative"
+                },
+                "moon": {
+                    "object": "Moon",
+                    "type": "Biquintile",
+                    "aspect": 144,
+                    "orb": 0.05243068377006921,
+                    "movement": "Exact"
+                },
+                "venus": {
+                    "object": "Venus",
+                    "type": "Sesquiquintile",
+                    "aspect": 108,
+                    "orb": 2.8133751488919927,
+                    "movement": "Separative"
+                },
+                "mars": {
+                    "object": "Mars",
+                    "type": "Biquintile",
+                    "aspect": 144,
+                    "orb": 2.9928447808775047,
+                    "movement": "Separative"
+                },
+                "saturn": {
+                    "object": "Saturn",
+                    "type": "Sextile",
+                    "aspect": 60,
+                    "orb": 6.446349216207636,
+                    "movement": "Separative"
+                },
+                "pluto": {
+                    "object": "Pluto",
+                    "type": "Sextile",
+                    "aspect": 60,
+                    "orb": 4.030723768608908,
+                    "movement": "Separative"
+                }
+            }
+        },
+        "neptune": {
+            "planet": "Neptune",
+            "sign": "Capricorn",
+            "chartAngle": 299.93894545763135,
+            "signAngle": 29.93894545763135,
+            "formattedChartAngle": {
+                "degrees": "299",
+                "minutes": "56",
+                "seconds": "20"
+            },
+            "formattedSignAngle": {
+                "degrees": "29",
+                "minutes": "56",
+                "seconds": "20"
+            },
+            "movement": "Retrograde",
+            "aspects": {
+                "sun": {
+                    "object": "Sun",
+                    "type": "Trine",
+                    "aspect": 120,
+                    "orb": 10.263487850785367,
+                    "movement": "Applicative"
+                },
+                "moon": {
+                    "object": "Moon",
+                    "type": "Quincunx",
+                    "aspect": 150,
+                    "orb": 2.783742444147208,
+                    "movement": "Separative"
+                },
+                "mercury": {
+                    "object": "Mercury",
+                    "type": "Square",
+                    "aspect": 90,
+                    "orb": 0.37078156645247873,
+                    "movement": "Applicative"
+                },
+                "venus": {
+                    "object": "Venus",
+                    "type": "Trine",
+                    "aspect": 120,
+                    "orb": 0.45531309073086845,
+                    "movement": "Applicative"
+                },
+                "mars": {
+                    "object": "Mars",
+                    "type": "Sesquisquare",
+                    "aspect": 135,
+                    "orb": 2.7241565412546436,
+                    "movement": "Separative"
+                },
+                "pluto": {
+                    "object": "Pluto",
+                    "type": "Sextile",
+                    "aspect": 60,
+                    "orb": 4.700587991768231,
+                    "movement": "Applicative"
+                },
+                "chiron": {
+                    "object": "Chiron",
+                    "type": "Square",
+                    "aspect": 90,
+                    "orb": 2.6175892784221446,
+                    "movement": "Separative"
+                }
+            }
+        },
+        "pluto": {
+            "planet": "Pluto",
+            "sign": "Sagittarius",
+            "chartAngle": 244.63953344939958,
+            "signAngle": 4.639533449399579,
+            "formattedChartAngle": {
+                "degrees": "244",
+                "minutes": "38",
+                "seconds": "22"
+            },
+            "formattedSignAngle": {
+                "degrees": "04",
+                "minutes": "38",
+                "seconds": "22"
+            },
+            "movement": "Retrograde",
+            "aspects": {
+                "sun": {
+                    "object": "Sun",
+                    "type": "Opposite",
+                    "aspect": 180,
+                    "orb": 14.964075842553598,
+                    "movement": "Applicative"
+                },
+                "moon": {
+                    "object": "Moon",
+                    "type": "Quincunx",
+                    "aspect": 150,
+                    "orb": 1.916845547621051,
+                    "movement": "Applicative"
+                },
+                "mercury": {
+                    "object": "Mercury",
+                    "type": "Biquintile",
+                    "aspect": 144,
+                    "orb": 0.9286304417792905,
+                    "movement": "Separative"
+                },
+                "venus": {
+                    "object": "Venus",
+                    "type": "Opposite",
+                    "aspect": 180,
+                    "orb": 5.155901082499099,
+                    "movement": "Applicative"
+                },
+                "uranus": {
+                    "object": "Uranus",
+                    "type": "Sextile",
+                    "aspect": 60,
+                    "orb": 4.030723768608908,
+                    "movement": "Separative"
+                },
+                "neptune": {
+                    "object": "Neptune",
+                    "type": "Sextile",
+                    "aspect": 60,
+                    "orb": 4.700587991768231,
+                    "movement": "Applicative"
+                },
+                "chiron": {
+                    "object": "Chiron",
+                    "type": "Semiquintile",
+                    "aspect": 36,
+                    "orb": 1.3181772701903753,
+                    "movement": "Separative"
+                }
+            }
+        },
+        "chiron": {
+            "planet": "Chiron",
+            "sign": "Libra",
+            "chartAngle": 207.3213561792092,
+            "signAngle": 27.321356179209204,
+            "formattedChartAngle": {
+                "degrees": "207",
+                "minutes": "19",
+                "seconds": "17"
+            },
+            "formattedSignAngle": {
+                "degrees": "27",
+                "minutes": "19",
+                "seconds": "17"
+            },
+            "movement": "Retrograde",
+            "aspects": {
+                "moon": {
+                    "object": "Moon",
+                    "type": "Trine",
+                    "aspect": 120,
+                    "orb": 5.4013317225693385,
+                    "movement": "Separative"
+                },
+                "mercury": {
+                    "object": "Mercury",
+                    "type": "Opposite",
+                    "aspect": 180,
+                    "orb": 2.246807711969666,
+                    "movement": "Separative"
+                },
+                "venus": {
+                    "object": "Venus",
+                    "type": "Quincunx",
+                    "aspect": 150,
+                    "orb": 2.162276187691276,
+                    "movement": "Separative"
+                },
+                "jupiter": {
+                    "object": "Jupiter",
+                    "type": "Trine",
+                    "aspect": 120,
+                    "orb": 6.843838997083367,
+                    "movement": "Applicative"
+                },
+                "neptune": {
+                    "object": "Neptune",
+                    "type": "Square",
+                    "aspect": 90,
+                    "orb": 2.6175892784221446,
+                    "movement": "Separative"
+                },
+                "pluto": {
+                    "object": "Pluto",
+                    "type": "Semiquintile",
+                    "aspect": 36,
+                    "orb": 1.3181772701903753,
+                    "movement": "Separative"
+                }
+            }
+        }
+    },
+    "points": {
+        "north node": {
+            "planet": "North Node",
+            "sign": "Virgo",
+            "chartAngle": 176.20766504355834,
+            "signAngle": 26.207665043558336,
+            "formattedChartAngle": {
+                "degrees": "176",
+                "minutes": "12",
+                "seconds": "28"
+            },
+            "formattedSignAngle": {
+                "degrees": "26",
+                "minutes": "12",
+                "seconds": "28"
+            },
+            "movement": "Retrograde",
+            "aspects": {
+                "sun": {
+                    "object": "Sun",
+                    "type": "Trine",
+                    "aspect": 120,
+                    "orb": 6.532207436712355,
+                    "movement": "Applicative"
+                },
+                "moon": {
+                    "object": "Moon",
+                    "type": "Square",
+                    "aspect": 90,
+                    "orb": 6.515022858220206,
+                    "movement": "Separative"
+                },
+                "mercury": {
+                    "object": "Mercury",
+                    "type": "Biquintile",
+                    "aspect": 144,
+                    "orb": 2.6395011523794665,
+                    "movement": "Applicative"
+                },
+                "venus": {
+                    "object": "Venus",
+                    "type": "Trine",
+                    "aspect": 120,
+                    "orb": 3.275967323342144,
+                    "movement": "Separative"
+                },
+                "jupiter": {
+                    "object": "Jupiter",
+                    "type": "Biquintile",
+                    "aspect": 144,
+                    "orb": 0.2698521385675008,
+                    "movement": "Exact"
+                },
+                "chiron": {
+                    "object": "Chiron",
+                    "type": "Semisextile",
+                    "aspect": 30,
+                    "orb": 1.1136911356508676,
+                    "movement": "Applicative"
+                }
+            }
+        },
+        "south node": {
+            "planet": "South Node",
+            "sign": "Pisces",
+            "chartAngle": 356.20766504355834,
+            "signAngle": 26.207665043558336,
+            "formattedChartAngle": {
+                "degrees": "356",
+                "minutes": "12",
+                "seconds": "28"
+            },
+            "formattedSignAngle": {
+                "degrees": "26",
+                "minutes": "12",
+                "seconds": "28"
+            },
+            "movement": "Retrograde",
+            "aspects": {
+                "sun": {
+                    "object": "Sun",
+                    "type": "Sextile",
+                    "aspect": 60,
+                    "orb": 6.532207436712383,
+                    "movement": "Applicative"
+                },
+                "moon": {
+                    "object": "Moon",
+                    "type": "Square",
+                    "aspect": 90,
+                    "orb": 6.51502285822022,
+                    "movement": "Separative"
+                },
+                "mercury": {
+                    "object": "Mercury",
+                    "type": "Semiquintile",
+                    "aspect": 36,
+                    "orb": 2.6395011523794665,
+                    "movement": "Applicative"
+                },
+                "venus": {
+                    "object": "Venus",
+                    "type": "Sextile",
+                    "aspect": 60,
+                    "orb": 3.275967323342172,
+                    "movement": "Separative"
+                },
+                "jupiter": {
+                    "object": "Jupiter",
+                    "type": "Semiquintile",
+                    "aspect": 36,
+                    "orb": 0.2698521385675008,
+                    "movement": "Exact"
+                },
+                "chiron": {
+                    "object": "Chiron",
+                    "type": "Quincunx",
+                    "aspect": 150,
+                    "orb": 1.1136911356508676,
+                    "movement": "Applicative"
+                }
+            }
+        },
+        "syzygy": {
+            "planet": "Syzygy",
+            "sign": "Taurus",
+            "chartAngle": 46.350257924189165,
+            "signAngle": 16.350257924189165,
+            "formattedChartAngle": {
+                "degrees": "46",
+                "minutes": "21",
+                "seconds": "01"
+            },
+            "formattedSignAngle": {
+                "degrees": "16",
+                "minutes": "21",
+                "seconds": "01"
+            },
+            "movement": "Direct",
+            "aspects": []
+        },
+        "pars fortuna": {
+            "planet": "Pars Fortuna",
+            "sign": "Aquarius",
+            "chartAngle": 300.53841815421407,
+            "signAngle": 0.5384181542140709,
+            "formattedChartAngle": {
+                "degrees": "300",
+                "minutes": "32",
+                "seconds": "18"
+            },
+            "formattedSignAngle": {
+                "degrees": "00",
+                "minutes": "32",
+                "seconds": "18"
+            },
+            "movement": "Stationary",
+            "aspects": {
+                "sun": {
+                    "object": "Sun",
+                    "type": "Trine",
+                    "aspect": 120,
+                    "orb": 10.86296054736809,
+                    "movement": "Applicative"
+                },
+                "moon": {
+                    "object": "Moon",
+                    "type": "Quincunx",
+                    "aspect": 150,
+                    "orb": 2.1842697475644854,
+                    "movement": "Separative"
+                },
+                "mercury": {
+                    "object": "Mercury",
+                    "type": "Square",
+                    "aspect": 90,
+                    "orb": 0.9702542630352013,
+                    "movement": "Applicative"
+                },
+                "venus": {
+                    "object": "Venus",
+                    "type": "Trine",
+                    "aspect": 120,
+                    "orb": 1.054785787313591,
+                    "movement": "Applicative"
+                },
+                "mars": {
+                    "object": "Mars",
+                    "type": "Sesquisquare",
+                    "aspect": 135,
+                    "orb": 2.124683844671921,
+                    "movement": "Separative"
+                },
+                "saturn": {
+                    "object": "Saturn",
+                    "type": "Quintile",
+                    "aspect": 72,
+                    "orb": 2.5781882800020526,
+                    "movement": "Separative"
+                },
+                "neptune": {
+                    "object": "Neptune",
+                    "type": "Conjunct",
+                    "aspect": 0,
+                    "orb": 0.5994726965827226,
+                    "movement": "Separative"
+                },
+                "pluto": {
+                    "object": "Pluto",
+                    "type": "Sextile",
+                    "aspect": 60,
+                    "orb": 4.101115295185508,
+                    "movement": "Applicative"
+                },
+                "chiron": {
+                    "object": "Chiron",
+                    "type": "Square",
+                    "aspect": 90,
+                    "orb": 3.2170619750048672,
+                    "movement": "Separative"
+                }
+            }
+        }
+    },
+    "angles": {
+        "asc": {
+            "angle": "Asc",
+            "sign": "Pisces",
+            "chartAngle": 343.5856484491466,
+            "signAngle": 13.585648449146618,
+            "formattedChartAngle": {
+                "degrees": "343",
+                "minutes": "35",
+                "seconds": "08"
+            },
+            "formattedSignAngle": {
+                "degrees": "13",
+                "minutes": "35",
+                "seconds": "08"
+            }
+        },
+        "mc": {
+            "angle": "MC",
+            "sign": "Sagittarius",
+            "chartAngle": 260.912085716433,
+            "signAngle": 20.912085716433012,
+            "formattedChartAngle": {
+                "degrees": "260",
+                "minutes": "54",
+                "seconds": "44"
+            },
+            "formattedSignAngle": {
+                "degrees": "20",
+                "minutes": "54",
+                "seconds": "44"
+            }
+        },
+        "desc": {
+            "angle": "Desc",
+            "sign": "Virgo",
+            "chartAngle": 163.58564844914667,
+            "signAngle": 13.585648449146674,
+            "formattedChartAngle": {
+                "degrees": "163",
+                "minutes": "35",
+                "seconds": "08"
+            },
+            "formattedSignAngle": {
+                "degrees": "13",
+                "minutes": "35",
+                "seconds": "08"
+            }
+        },
+        "ic": {
+            "angle": "IC",
+            "sign": "Gemini",
+            "chartAngle": 80.91208571643301,
+            "signAngle": 20.912085716433012,
+            "formattedChartAngle": {
+                "degrees": "80",
+                "minutes": "54",
+                "seconds": "44"
+            },
+            "formattedSignAngle": {
+                "degrees": "20",
+                "minutes": "54",
+                "seconds": "44"
+            }
+        }
+    },
+    "houses": {
+        "1": {
+            "house": 1,
+            "sign": "Pisces",
+            "chartAngle": 343.5856484491466,
+            "signAngle": 13.585648449146618,
+            "formattedChartAngle": {
+                "degrees": "343",
+                "minutes": "35",
+                "seconds": "08"
+            },
+            "formattedSignAngle": {
+                "degrees": "13",
+                "minutes": "35",
+                "seconds": "08"
+            }
+        },
+        "2": {
+            "house": 2,
+            "sign": "Aries",
+            "chartAngle": 27.980050226930114,
+            "signAngle": 27.980050226930114,
+            "formattedChartAngle": {
+                "degrees": "27",
+                "minutes": "58",
+                "seconds": "48"
+            },
+            "formattedSignAngle": {
+                "degrees": "27",
+                "minutes": "58",
+                "seconds": "48"
+            }
+        },
+        "3": {
+            "house": 3,
+            "sign": "Taurus",
+            "chartAngle": 57.96628436660865,
+            "signAngle": 27.966284366608647,
+            "formattedChartAngle": {
+                "degrees": "57",
+                "minutes": "57",
+                "seconds": "59"
+            },
+            "formattedSignAngle": {
+                "degrees": "27",
+                "minutes": "57",
+                "seconds": "59"
+            }
+        },
+        "4": {
+            "house": 4,
+            "sign": "Gemini",
+            "chartAngle": 80.91208571643301,
+            "signAngle": 20.912085716433012,
+            "formattedChartAngle": {
+                "degrees": "80",
+                "minutes": "54",
+                "seconds": "44"
+            },
+            "formattedSignAngle": {
+                "degrees": "20",
+                "minutes": "54",
+                "seconds": "44"
+            }
+        },
+        "5": {
+            "house": 5,
+            "sign": "Cancer",
+            "chartAngle": 102.40709299789313,
+            "signAngle": 12.40709299789313,
+            "formattedChartAngle": {
+                "degrees": "102",
+                "minutes": "24",
+                "seconds": "26"
+            },
+            "formattedSignAngle": {
+                "degrees": "12",
+                "minutes": "24",
+                "seconds": "26"
+            }
+        },
+        "6": {
+            "house": 6,
+            "sign": "Leo",
+            "chartAngle": 127.30309449176275,
+            "signAngle": 7.303094491762749,
+            "formattedChartAngle": {
+                "degrees": "127",
+                "minutes": "18",
+                "seconds": "11"
+            },
+            "formattedSignAngle": {
+                "degrees": "07",
+                "minutes": "18",
+                "seconds": "11"
+            }
+        },
+        "7": {
+            "house": 7,
+            "sign": "Virgo",
+            "chartAngle": 163.58564844914667,
+            "signAngle": 13.585648449146674,
+            "formattedChartAngle": {
+                "degrees": "163",
+                "minutes": "35",
+                "seconds": "08"
+            },
+            "formattedSignAngle": {
+                "degrees": "13",
+                "minutes": "35",
+                "seconds": "08"
+            }
+        },
+        "8": {
+            "house": 8,
+            "sign": "Libra",
+            "chartAngle": 207.9800502269301,
+            "signAngle": 27.980050226930103,
+            "formattedChartAngle": {
+                "degrees": "207",
+                "minutes": "58",
+                "seconds": "48"
+            },
+            "formattedSignAngle": {
+                "degrees": "27",
+                "minutes": "58",
+                "seconds": "48"
+            }
+        },
+        "9": {
+            "house": 9,
+            "sign": "Scorpio",
+            "chartAngle": 237.96628436660865,
+            "signAngle": 27.966284366608647,
+            "formattedChartAngle": {
+                "degrees": "237",
+                "minutes": "57",
+                "seconds": "59"
+            },
+            "formattedSignAngle": {
+                "degrees": "27",
+                "minutes": "57",
+                "seconds": "59"
+            }
+        },
+        "10": {
+            "house": 10,
+            "sign": "Sagittarius",
+            "chartAngle": 260.912085716433,
+            "signAngle": 20.912085716433012,
+            "formattedChartAngle": {
+                "degrees": "260",
+                "minutes": "54",
+                "seconds": "44"
+            },
+            "formattedSignAngle": {
+                "degrees": "20",
+                "minutes": "54",
+                "seconds": "44"
+            }
+        },
+        "11": {
+            "house": 11,
+            "sign": "Capricorn",
+            "chartAngle": 282.40709299789313,
+            "signAngle": 12.40709299789313,
+            "formattedChartAngle": {
+                "degrees": "282",
+                "minutes": "24",
+                "seconds": "26"
+            },
+            "formattedSignAngle": {
+                "degrees": "12",
+                "minutes": "24",
+                "seconds": "26"
+            }
+        },
+        "12": {
+            "house": 12,
+            "sign": "Aquarius",
+            "chartAngle": 307.30309449176275,
+            "signAngle": 7.303094491762749,
+            "formattedChartAngle": {
+                "degrees": "307",
+                "minutes": "18",
+                "seconds": "11"
+            },
+            "formattedSignAngle": {
+                "degrees": "07",
+                "minutes": "18",
+                "seconds": "11"
+            }
+        }
+    }
+}
