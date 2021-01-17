@@ -1,16 +1,14 @@
 # astrollo_app
 
-A Flutter mobile app which allows users to generate and store their friend's birth charts using REST API's and Firebase.  https://ariesaviles.webflow.io/
+A solo passion project started in December 2020. Astrollo is a mobile app which aims to provide iOS and Android users the ability to generate, store and access their friend's astrology charts.
 
-## Getting Started
+Technologies that are used: REST API's (Immanuel API and Google Maps' Places API), Database and User Authentication (Firebase), Flutter (Dart Language)
 
-This project is a starting point for a Flutter application.
+*The following images show the current state of the app on an Android Device as of Dec. 14th.
 
-A few resources to get you started if this is your first Flutter project:
+<img src="https://i.ibb.co/p4NsNvw/Untitled-1.png" width="200" /> <img src="https://uploads-ssl.webflow.com/5fd7c25de07b4d703cc8d693/5fdee3b14257300d8b6c6c65_astrollo%20(2).gif" width="200" /> <img src="https://uploads-ssl.webflow.com/5fd7c25de07b4d703cc8d693/5fdeeafc7bad8c5c81e65746_Screenshot_20201211-234833-p-500.jpeg" width="200" />
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Below you'll find are mockups for the future planned implementations of this app.
+<img src="https://i.ibb.co/2YtV6jC/Screenshot-2.png" width="700"/>
+
