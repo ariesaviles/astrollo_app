@@ -9,6 +9,6 @@ Technologies that are used: REST API's (Immanuel API and Google Maps' Places API
 <img src="https://i.ibb.co/p4NsNvw/Untitled-1.png" width="200" /> <img src="https://uploads-ssl.webflow.com/5fd7c25de07b4d703cc8d693/5fdee3b14257300d8b6c6c65_astrollo%20(2).gif" width="200" /> <img src="https://uploads-ssl.webflow.com/5fd7c25de07b4d703cc8d693/5fdeeafc7bad8c5c81e65746_Screenshot_20201211-234833-p-500.jpeg" width="200" />
 
 
-Below you'll find are mockups for the future planned implementations of this app.
+Below you'll find mockups for the future planned implementations of Astrollo.
 <img src="https://i.ibb.co/2YtV6jC/Screenshot-2.png" width="700"/>
 
